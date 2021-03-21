@@ -23,7 +23,9 @@ public class SoftAssertions {
        $(byLinkText("selenide/selenide")).click();
 
         //---Go to Wiki
-        $(".UnderlineNav-body").findElement(byText("Wiki")).click();
+        //$(".UnderlineNav-body").find(byText("Wiki")).click();
+        $(byText("Wiki")).click();
+
 
         //---SoftAssertions page is available in the list
         $(".markdown-body").shouldHave(text("Soft assertions"));
